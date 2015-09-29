@@ -1,0 +1,26 @@
+[global_config]
+  focus = system
+  window_state = maximise
+[keybindings]
+  help = F2
+  hide_window = F1
+  next_tab = <Alt>Right
+  prev_tab = <Alt>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#252525"
+    background_image = None
+    font = Ubuntu Mono derivative Powerline 13
+    foreground_color = "#839496"
+    scrollback_lines = 10000000
+    scrollbar_position = hidden
+    use_system_font = False
