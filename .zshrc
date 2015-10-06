@@ -154,3 +154,20 @@ alias sdlogs='sudo docker logs'
 alias sdex='sudo docker exec -it'
 alias sdstop='sudo docker stop'
 alias cdpr='cd ~/projects'
+
+## Java JDK
+export JAVA_HOME=/usr/lib/jvm/jdk/bin/java
+export JDK_HOME=/usr/lib/jvm/jdk
+export PATH=$PATH:$JAVA_HOME
+export PATH=$PATH:$JDK_HOME
+
+## Debian Jessie Backports
+alias japti='sudo apt-get -t jessie-backports install'
+alias japtup='sudo apt-get -t jessie-backports update'
+alias japtupg='sudo apt-get -t jessie-backports upgrade'
+alias japts='sudo apt-cache -t jessie-backports search'
+
+
+if [ -d "/usr/lib/jvm/jdk" ] ; then
+    export PATH="/usr/lib/jvm/jdk/bin:$PATH"
+fi
