@@ -15,31 +15,31 @@ background_color = #000000 0
 border_color = #000000 0
 
 # ID 2 - active task
-rounded = 3
+rounded = 8
 border_width = 0
 background_color = #ffffff 30
 border_color = #ffffff 0
 
 # ID 3 - urgent task
-rounded = 3
+rounded = 10
 border_width = 2
 background_color = #4285F4 30
 border_color = #4285F4 100
 
 # ID 4 - system tray
-rounded = 2
+rounded = 10
 border_width = 0
 background_color = #000000 40
 border_color = #000000 50
 
 # ID 5 - tooltip
-rounded = 3
+rounded = 10
 border_width = 0
 background_color = #000000 100
 border_color = #000000 0
 
 # ID 6 - selected window
-rounded = 2
+rounded = 10
 border_width = 0
 background_color = #000000 50
 border_color = #000000 0
@@ -104,10 +104,9 @@ launcher_padding = 6 0 16
 launcher_background_id = 0
 launcher_icon_theme = Moka
 launcher_item_app = /home/x-home/.local/share/applications/menu.desktop
-launcher_item_app = /usr/share/applications/Thunar.desktop
-launcher_item_app = /usr/share/applications/rednotebook.desktop
+launcher_item_app = /home/cemg/.local/share/applications/telegramdesktop.desktop
 launcher_item_app = /usr/share/applications/zim.desktop
-#launcher_item_app = /usr/share/applications/firefox.desktop
+launcher_item_app = /usr/share/applications/iceweasel.desktop
 
 # System Tray
 systray = 1
