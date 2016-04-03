@@ -2,7 +2,7 @@
   focus = system
   window_state = maximise
 [keybindings]
-  help = F2
+  help = <Shift>braceleft
   hide_window = F1
   next_tab = <Alt>Right
   prev_tab = <Alt>Left
@@ -17,15 +17,12 @@
 [plugins]
 [profiles]
   [[default]]
-#    background_color = "#252525"
-#    background_image = None
-    font = Ubuntu Mono derivative Powerline 13
-#    foreground_color = "#839496"
-    scrollback_lines = 10000000
-    scrollbar_position = hidden
+    background_color = "#252e32"
+    background_darkness = 1.0
+    background_image = None
+    cursor_color = "#aaaaaa"
+    font = Hack 11
+    foreground_color = "#969f9c"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
     use_system_font = False
-    palette = "#000000:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#bbbbbb:#555555:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#ffffff"
-    background_color = "#1e1f29"
-    cursor_color = "#bbbbbb"
-    foreground_color = "#f8f8f2"
-
