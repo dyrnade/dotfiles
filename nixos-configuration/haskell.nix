@@ -1,4 +1,4 @@
-# cemg - packages.nix
+# cemg - haskell.nix
 
 { config, pkgs, ... }:
 
