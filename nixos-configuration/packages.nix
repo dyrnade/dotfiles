@@ -20,7 +20,7 @@
     skype
     tree
     unrar
-    vlc
+    mpv
     vim
     weechat
     wget

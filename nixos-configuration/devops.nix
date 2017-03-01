@@ -10,6 +10,7 @@
     hstr
     meld
     vim
-    tilda
+    terminator
+    termite
   ];
 }

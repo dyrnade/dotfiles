@@ -8,7 +8,7 @@
     group = "users";
     extraGroups = [
       "audio"
-      "bumblebee"
+      #"bumblebee"
       "disk"
       "networkmanager"
       "systemd-journal"
@@ -21,7 +21,7 @@
     home = "/home/cemg";
     uid = 1000;
     isNormalUser = true;
-    shell = "/run/current-system/sw/bin/fish";
+    shell = "/run/current-system/sw/bin/bash";
     initialPassword = "1";
     #openssh.authorizedKeys.keys = ["id_rsa" "id_rsa.pub"];
   };

@@ -12,6 +12,7 @@
     ./packages.nix
     # Add users.
     ./users.nix
+    ./devops.nix
   ];
 
 ######## BOOT OPTIONS ########
@@ -38,10 +39,10 @@
 
 ####### GPU AND AUDIO #########
   hardware = {
-    bumblebee = {
-      connectDisplay = true;
-      enable = true;
-    };
+#    bumblebee = {
+#      connectDisplay = true;
+#      enable = true;
+#    };
     cpu.intel.updateMicrocode = true;
     opengl = {
       driSupport32Bit = true;
@@ -97,23 +98,24 @@
     };
     # Xserver settings like - DE , DM, Layout etc..
     xserver = {
-      desktopManager = {
-        default = "gnome3";
-        gnome3.enable = true;
-      };
+#      desktopManager = {
+#        default = "gnome3";
+#        gnome3.enable = true;
+#      };
       windowManager = {
-	i3.enable = true;
+         notion.enable = true;
       };
-      displayManager = {
-        slim.enable = true;
-        sddm.autoNumlock = true;
-        slim.defaultUser = "cemg";
-      };
+#      displayManager = {
+#        slim.enable = true;
+#        sddm.autoNumlock = true;
+#        slim.defaultUser = "cemg";
+#      };
       enable = true;
       layout = "us";
       xkbOptions = "eurosign:e";
-      videoDrivers = [ "intel nvidia" ];
-#      synaptics.enable = true;
+      videoDrivers = [ "intel" ];
+      synaptics.enable = true;
+      synaptics.twoFingerScroll = true;
     };
     # Enable the OpenSSH server.
     openssh = {
@@ -135,10 +137,10 @@
   };
 
 ##### POWERMANAGEMENT #######
-  powerManagement = {
-    enable = true;
-    cpuFreqGovernor = "ondemand";
-  };
+#  powerManagement = {
+#    enable = true;
+#    cpuFreqGovernor = "ondemand";
+#  };
 
   time.timeZone = "Europe/Istanbul";
   # Virtualbox
@@ -147,9 +149,9 @@
 ###### SYSTEM ########
   system = {
     autoUpgrade = {
-      channel= "https://nixos.org/channels/nixos-16.09";
+      channel= "https://nixos.org/channels/nixos-unstable";
       enable = true;
     };
-    stateVersion = "16.09";
+    #stateVersion = "16.09";
   };
 }

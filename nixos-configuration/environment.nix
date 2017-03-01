@@ -23,21 +23,21 @@
       '';
     };
     systemPackages = with pkgs; [
-      go
+#      go
       # i3 packages
-      i3status
-      lxappearance
-      i3lock
-      rofi
-      gnome.gnome_icon_theme
-      compton
+ #     i3status
+  #    lxappearance
+   #   i3lock
+    #  rofi
+     # gnome.gnome_icon_theme
+      #compton
       playerctl
       xorg.xbacklight
-      dmenu
+      #dmenu
     ];
     variables = {
       BROWSER = "firefox";
-      GOROOT = [ "${pkgs.go.out}/share/go" ];
+      #GOROOT = [ "${pkgs.go.out}/share/go" ];
     };
   };
 }
