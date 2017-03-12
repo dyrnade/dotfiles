@@ -1,13 +1,13 @@
 defbindings("WMPlex", {
-    kpress("Mod1+F6", function() ioncore.exec("exec amixer -c 1 set PCM 5%+") end),
+    kpress("Mod1+F6", function() ioncore.exec("pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%") end),
 })
 
 defbindings("WMPlex", {
-    kpress("Mod1+F5", function() ioncore.exec("exec amixer -c 1 set PCM 5%-") end),
+    kpress("Mod1+F5", function() ioncore.exec("pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%") end),
 })
 
 defbindings("WMPlex", {
-    kpress("Mod1+F3", function() ioncore.exec("amixer -c 1 set PCM 0") end),
+    kpress("Mod1+F3", function() ioncore.exec("pactl set-sink-mute 0 toggle") end),
 })
 
 defbindings("WMPlex", {

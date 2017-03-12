@@ -57,7 +57,7 @@ ioncore.set{
     --screen_notify=true,
 
     -- Automatically save layout on restart and exit.
-    --autosave_layout=true,
+    autosave_layout=true,
 
     -- Mouse focus mode; set to "sloppy" if you want the focus to follow the
     -- mouse, and to "disabled" otherwise.
@@ -98,7 +98,7 @@ dopath("cfg_mykeybindings")
 --dopath("cfg_notioncore")
 
 -- Load some kludges to make apps behave better.
---dopath("cfg_kludges")
+dopath("cfg_kludges")
 
 -- Define some layouts.
 --dopath("cfg_layouts")
@@ -108,8 +108,8 @@ dopath("cfg_mykeybindings")
 --dopath("mod_query")
 --dopath("mod_menu")
 --dopath("mod_tiling")
---dopath("mod_statusbar")
---dopath("mod_dock")
+dopath("mod_statusbar")
+dopath("mod_dock")
 --dopath("mod_sp")
 --dopath("mod_notionflux")
 --dopath("mod_xrandr")
@@ -124,3 +124,4 @@ dopath("cfg_mykeybindings")
 --defbindings("WMPlex.toplevel", {
 --    kpress(META.."M", "mod_menu.menu(_, _sub, 'ctxmenu')"),
 --})
+defwinprop {class="stalonetray", statusbar="dock"}
