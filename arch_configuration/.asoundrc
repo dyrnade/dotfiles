@@ -1,3 +1,0 @@
-defaults.pcm.!card PCH
-default.pcm.!device 0
-defaults.pcm.!ctl PCH
